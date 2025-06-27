@@ -31,7 +31,7 @@ chmod +x nezha-agent
 ARGS=("-s" "$SERVER" "-p" "$PASSWORD")
 
 if [ "$USE_TLS" = "true" ]; then
-  ARGS+=("-tls")
+  ARGS+=("--tls")
 fi
 
 exec ./nezha-agent "${ARGS[@]}"
